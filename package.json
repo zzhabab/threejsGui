@@ -1,0 +1,29 @@
+{
+  "name": "zzhthreegui",
+  "version": "1.0.1",
+  "description": "",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "browser": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node ./node_modules/rollup/dist/bin/rollup --config rollup.config.js --bundleConfigAsCjs",
+    "start": "http-server"
+  },
+  "keywords": [
+    "threejs",
+    "gui"
+  ],
+  "author": "zzh",
+  "files": [
+    "dist"
+  ],
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "rollup": "^4.12.0",
+    "rollup-plugin-dts": "^6.1.0",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "three": "^0.162.0"
+  }
+}
